@@ -9,7 +9,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-// 1. Setup DataStore Extension (Singleton)
+// 1. Setup DataStore Extension (Singletons)
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settingsStore")
 
 class SettingsStore(private val context: Context) {
